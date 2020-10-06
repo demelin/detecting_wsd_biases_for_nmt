@@ -2,7 +2,7 @@
 
 This repository contains the experimental code for the publication **Detecting Word Sense Disambiguation Biases in Machine Translation for Model-Agnostic Adversarial Attacks** (Emelin, Denis, Ivan Titov, and Rico Sennrich, EMNLP 2020).
 
-The readme is meant to provide an overview of the functionality of the different scripts included in this codebase and their relation to the paper’s contents. For the required and optional arguments of each script, please run python3 `script_name.py` -h. References to the paper :blue_book: are given in **bold**.
+The readme is meant to provide an overview of the functionality of the different scripts included in this codebase and their relation to the paper’s contents. For the required and optional arguments of each script, please run python3 `script_name.py` -h. References to relevant paper sections (:blue_book:) are given in **bold**.
   
   
 ## Requirements
@@ -27,25 +27,31 @@ The readme is meant to provide an overview of the functionality of the different
 ## Resource collection
 
 `resource_collection/clean_corpora.py`  
-Cleans the raw parallel corpora. :blue_book: See **Appendix A1** for details.
+Cleans the raw parallel corpora.  
+:blue_book: See **Appendix A1** for details.
 
 `resource_collection/scrape_babelnet.py`  
-Collects sense clusters for English homographs from BabelNet and refines them by applying filtering heuristics. :blue_book: See **Section 2.1, Resource collection** for details.
+Collects sense clusters for English homographs from BabelNet and refines them by applying filtering heuristics.  
+:blue_book: See **Section 2.1, Resource collection** for details.
 
 `resource_collection/remove_sense_duplicates.py`  
 Removes sense duplicates from collected BabelNet sense clusters.
 
 `resource_collection/extract_attractor_terms.py`  
-Extracts attractor terms from specified training corpora, assigning them to corresponding homograph senses clusters, and computes their disambiguation bias values. :blue_book: See **Section 2.1** for details.
+Extracts attractor terms from specified training corpora, assigning them to corresponding homograph senses clusters, and computes their disambiguation bias values.  
+:blue_book: See **Section 2.1** for details.
 
 `resource_collection/extract_seed_pairs.py`  
-Extracts seed sentences containing homographs from held-out and test corpora for the benchmarking of WSD error prediction performance and the generation of adversarial samples. :blue_book: See **Section 2.2** for details.
+Extracts seed sentences containing homographs from held-out and test corpora for the benchmarking of WSD error prediction performance and the generation of adversarial samples.  
+:blue_book: See **Section 2.2** for details.
 
 `resource_collection/extract_homograph_modifiers.py`  
-Extracts adjectives observed to modify known homograph senses in the English portion of the training corpora, used to constrain the generation of adversarial samples. :blue_book: See **Section 3.1, Attractor selection** for details.
+Extracts adjectives observed to modify known homograph senses in the English portion of the training corpora, used to constrain the generation of adversarial samples.  
+:blue_book: See **Section 3.1, Attractor selection** for details.
 
 `resource_collection/extract_non_homograph_modifiers.py`  
-Extracts adjectives observed to modify non-homograph nouns in a specified monolingual English corpus, used to constrain the generation of adversarial samples. :blue_book: See **Section 3.1, Attractor selection** for details.
+Extracts adjectives observed to modify non-homograph nouns in a specified monolingual English corpus, used to constrain the generation of adversarial samples.  
+:blue_book: See **Section 3.1, Attractor selection** for details.
   
   
 ## Adversarial sample generation
