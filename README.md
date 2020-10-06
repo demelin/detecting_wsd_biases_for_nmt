@@ -2,10 +2,9 @@
 
 This repository contains the experimental code for the publication **Detecting Word Sense Disambiguation Biases in Machine Translation for Model-Agnostic Adversarial Attacks** (Emelin, Denis, Ivan Titov, and Rico Sennrich, EMNLP 2020).
 
-The readme is meant to provide an overview of the functionality of the different scripts included in this codebase and their relation to the paper’s contents. For the required and optional arguments of each script, please run python3 `script_name.py` -h.
-
-
-
+The readme is meant to provide an overview of the functionality of the different scripts included in this codebase and their relation to the paper’s contents. For the required and optional arguments of each script, please run python3 `script_name.py` -h. References to the paper are given in **bold**.
+  
+  
 ## Requirements
 
 * python 3.x
@@ -23,34 +22,32 @@ The readme is meant to provide an overview of the functionality of the different
 * tensorflow_hub
 * language_tool_python
 * sentence_transformers
-
-
-
+  
+  
 ## Resource collection
 
-`resource_collection/clean_corpora.py`:  
-Used to clean the raw parallel corpora. See Appendix A1 for details.
+`resource_collection/clean_corpora.py`  
+:green_book: Cleans the raw parallel corpora. See **Appendix A1** for details.
 
-`resource_collection/scrape_babelnet.py`:  
-Used to obtain sense clusters for English homographs from BabelNet and refine them by applying filtering heuristics. See Section 2.1, Resource collection, for details.
+`resource_collection/scrape_babelnet.py`  
+:green_book: Collects sense clusters for English homographs from BabelNet and refines them by applying filtering heuristics. See **Section 2.1, Resource collection** for details.
 
-`resource_collection/remove_sense_duplicates.py`:  
-Used to remove sense duplicates from BabelNet sense clusters.
+`resource_collection/remove_sense_duplicates.py`  
+:green_book: Removes sense duplicates from collected BabelNet sense clusters.
 
-`resource_collection/extract_attractor_terms.py`:  
-Used to collect attractor terms from training corpora, assign them to corresponding homograph senses clusters, and compute their disambiguation bias values. See Section 2.1 for details.
+`resource_collection/extract_attractor_terms.py`  
+:green_book: Extracts attractor terms from specified training corpora, assigning them to corresponding homograph senses clusters, and computes their disambiguation bias values. See **Section 2.1** for details.
 
-`resource_collection/extract_seed_pairs.py`:  
-Used to collect seed sentences containing homographs from held-out and test corpora for the benchmarking of WSD error prediction performance and the generation of adversarial samples. See Section 2.2 for details.
+`resource_collection/extract_seed_pairs.py`  
+:green_book: Extracts seed sentences containing homographs from held-out and test corpora for the benchmarking of WSD error prediction performance and the generation of adversarial samples. See **Section 2.2** for details.
 
-`resource_collection/extract_homograph_modifiers.py`:  
-Used to extract adjectives observed to modify known homograph senses in the English side of parallel corpora for constraining the generation of adversarial samples. See Section 3.1, Attractor selection, for details.
+`resource_collection/extract_homograph_modifiers.py`  
+:green_book: Extracts adjectives observed to modify known homograph senses in the English portion of the training corpora, used to constrain the generation of adversarial samples. See **Section 3.1, Attractor selection** for details.
 
-`resource_collection/extract_non_homograph_modifiers.py`:  
-Used to extract adjectives observed to modify non-homograph nouns in a monolingual corpus for constraining the generation of adversarial samples. See Section 3.1, Attractor selection, for details.
-
-
-
+`resource_collection/extract_non_homograph_modifiers.py`  
+:green_book: Extracts adjectives observed to modify non-homograph nouns in a specified monolingual English corpus, used to constrain the generation of adversarial samples. See **Section 3.1, Attractor selection** for details.
+  
+  
 ## Adversarial sample generation
 
 `adversarial_sample_generation/generate_adversarial_samples.py`:
