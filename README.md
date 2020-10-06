@@ -28,25 +28,25 @@ The readme is meant to provide an overview of the functionality of the different
 
 ## Resource collection
 
-`resource_collection/clean_corpora.py`:
+`resource_collection/clean_corpora.py`:  
 Used to clean the raw parallel corpora. See Appendix A1 for details.
 
-`resource_collection/scrape_babelnet.py`:
+`resource_collection/scrape_babelnet.py`:  
 Used to obtain sense clusters for English homographs from BabelNet and refine them by applying filtering heuristics. See Section 2.1, Resource collection, for details.
 
-`resource_collection/remove_sense_duplicates.py`:
+`resource_collection/remove_sense_duplicates.py`:  
 Used to remove sense duplicates from BabelNet sense clusters.
 
-`resource_collection/extract_attractor_terms.py`:
+`resource_collection/extract_attractor_terms.py`:  
 Used to collect attractor terms from training corpora, assign them to corresponding homograph senses clusters, and compute their disambiguation bias values. See Section 2.1 for details.
 
-`resource_collection/extract_seed_pairs.py`:
+`resource_collection/extract_seed_pairs.py`:  
 Used to collect seed sentences containing homographs from held-out and test corpora for the benchmarking of WSD error prediction performance and the generation of adversarial samples. See Section 2.2 for details.
 
-`resource_collection/extract_homograph_modifiers.py`:
+`resource_collection/extract_homograph_modifiers.py`:  
 Used to extract adjectives observed to modify known homograph senses in the English side of parallel corpora for constraining the generation of adversarial samples. See Section 3.1, Attractor selection, for details.
 
-`resource_collection/extract_non_homograph_modifiers.py`:
+`resource_collection/extract_non_homograph_modifiers.py`:  
 Used to extract adjectives observed to modify non-homograph nouns in a monolingual corpus for constraining the generation of adversarial samples. See Section 3.1, Attractor selection, for details.
 
 
