@@ -1,8 +1,6 @@
-# Experimental code for the publication
-'Detecting Word Sense Disambiguation Biases in Machine Translation for Model-Agnostic Adversarial Attacks',
-Denis Emelin, Ivan Titov, and Rico Sennrich, EMNLP 2020 (to appear)
+# Experimental code for 'Detecting Word Sense Disambiguation Biases in Machine Translation for Model-Agnostic Adversarial Attacks', Denis Emelin, Ivan Titov, and Rico Sennrich, EMNLP 2020 (to appear)
 
-This readme file describes the functionality of the different scripts included in this codebase and their relation to the paper’s contents. For clarity, the codebase excludes some of the utility scripts used in the experiments, e.g. bash scripts for training the baseline models and obtaining translations. These will be included for the public release, along with an improved documentation. For the required and optional arguments of each script, please run python3 script_name.py -h.
+This readme file describes the functionality of the different scripts included in this codebase and their relation to the paper’s contents. For the required and optional arguments of each script, please run python3 `script_name.py` -h.
 
 
 ## Requirements (see requirements.txt)
