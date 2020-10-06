@@ -5,6 +5,7 @@ This repository contains the experimental code for the publication **Detecting W
 The readme is meant to provide an overview of the functionality of the different scripts included in this codebase and their relation to the paper’s contents. For the required and optional arguments of each script, please run python3 `script_name.py` -h.
 
 
+
 ## Requirements (see requirements.txt)
 
 * python 3.x
@@ -22,6 +23,7 @@ The readme is meant to provide an overview of the functionality of the different
 * tensorflow_hub
 * language_tool_python
 * sentence_transformers
+
 
 
 ## Resource collection
@@ -48,6 +50,7 @@ Used to extract adjectives observed to modify known homograph senses in the Engl
 Used to extract adjectives observed to modify non-homograph nouns in a monolingual corpus for constraining the generation of adversarial samples. See Section 3.1, Attractor selection, for details.
 
 
+
 ## Adversarial sample generation
 
 `adversarial_sample_generation/generate_adversarial_samples.py`:
@@ -58,6 +61,7 @@ Used to identify and remove seed sentences containing ambiguous homograph mentio
 
 `adversarial_sample_generation/score_samples_with_lm.py`:
 Used to estimate sentence perplexity increases in adversarial samples relative to their underlying seed sentences. See Section 3.1, Post-generation filtering, for details.
+
 
 
 ## Evaluation
@@ -103,6 +107,7 @@ Used to calculate correlation scores based on homograph sense cluster frequency.
  
 `evaluation/write_adversarial_tables_to_text.py`:
 Used to write adversarial samples to a plain text file to be translated by baseline NMT models.
+
 
 
 ## Resources
