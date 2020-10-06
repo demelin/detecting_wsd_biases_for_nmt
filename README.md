@@ -6,7 +6,7 @@ The readme is meant to provide an overview of the functionality of the different
 
 
 
-## Requirements (see requirements.txt)
+## Requirements
 
 * python 3.x
 
@@ -113,3 +113,16 @@ Used to write adversarial samples to a plain text file to be translated by basel
 ## Resources
 `./ende_homograph_sense_clusters.json`:
 Contains the manually refined homograph sense clusters used in all experiments. See Section 2.1, Resource collection, for details.
+
+
+## Citation
+
+```
+@inproceedings{emelin2020detecting,
+  title={Detecting Word Sense Disambiguation Biases in Machine Translation for Model-Agnostic Adversarial Attacks},
+  author={Emelin, Denis and Titov, Ivan and Sennrich, Rico},
+  booktitle={Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing},
+  pages={xxx--xxxx},
+  year={2020}
+}
+```
