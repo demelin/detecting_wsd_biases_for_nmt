@@ -1,6 +1,6 @@
 README
 
-This readme file describes the functionality of the different scripts included in this codebase and their relation to the paper’s contents. For clarity, the codebase excludes some of the utility scripts used in the experiments, e.g. bash scripts for training the baseline models and obtaining translations. These will be included for the public release, along with an improved documentation. For the required and optional arguments of each script, please run python3 script_name.py -h.
+This readme file describes the functionality of the different scripts included in this codebase and their relation to the paper’s contents. For the required and optional arguments of each script, please run python3 script_name.py -h.
 
 
 
