@@ -15,7 +15,7 @@ The readme is meant to provide an overview of the functionality of the different
 * langid
 * pandas
 * sklearn
-* pytorch
+* torch
 * pingouin
 * babelnetpy
 * transformers
