@@ -135,14 +135,13 @@ Contains the manually refined homograph sense cluster lexicon used in all experi
 :blue_book: See **Section 2.1, Resource collection** for details.
 
 
-## Citation (provisory)
+## Citation
 
 ```
-@inproceedings{emelin2020detecting,
+@inproceedings{Emelin2020DetectingWS,
   title={Detecting Word Sense Disambiguation Biases in Machine Translation for Model-Agnostic Adversarial Attacks},
-  author={Emelin, Denis and Titov, Ivan and Sennrich, Rico},
-  booktitle={Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing},
-  pages={xxx--xxxx},
+  author={Denis Emelin and Ivan Titov and Rico Sennrich},
+  booktitle={EMNLP},
   year={2020}
 }
 ```
