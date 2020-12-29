@@ -108,7 +108,7 @@ def score_samples(sample_path, max_ppl_increase=0.2):
     kept_samples = list()
     dropped_samples = list()
     for tpl in scored_sample_entries:
-        f tpl[0][-1] <= 1. + max_ppl_increase:
+        if tpl[0][-1] <= 1. + max_ppl_increase:
             kept_samples.append(tpl)
         else:
             dropped_samples.append(tpl)
