@@ -1,5 +1,8 @@
 # Readme 
 
+## UPDATE -- 14.2.23
+We added streamlined evaluation scripts for the replication of our word sense disambiguation experiments detailed in **Sections 2 and 3** of the paper. These can be found in the `benchmark_evaluation_scripts` directory.
+
 This repository contains the experimental code for the publication **Detecting Word Sense Disambiguation Biases in Machine Translation for Model-Agnostic Adversarial Attacks** (Emelin, Denis, Ivan Titov, and Rico Sennrich, EMNLP 2020).
 
 The readme is meant to provide an overview of the functionality of the different scripts included in this codebase and their relation to the paper’s contents. For the required and optional arguments of each script, please run python3 `script_name.py` -h. References to relevant paper sections (:blue_book:) are given in **bold**.
